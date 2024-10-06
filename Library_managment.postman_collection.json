@@ -1,0 +1,610 @@
+{
+	"info": {
+		"_postman_id": "cd4693c3-1da9-4f88-9a4d-e960777361d5",
+		"name": "Library_managment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17695013"
+	},
+	"item": [
+		{
+			"name": "Auth_service",
+			"item": [
+				{
+					"name": "Member_creation",
+					"item": [
+						{
+							"name": "getallmemberlist",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzAxNTZmNDE1YjQzYmE4OGZjY2RkNzQiLCJlbWFpbCI6ImtyaXNobmFAZ21haWwuY29tIiwicm9sZSI6IjEiLCJpYXQiOjE3MjgxNTIzNTEsImV4cCI6MTcyODIzODc1MX0.FjjMuHk1D_KiBZtiDhEP9cm034PJ4n49XJxQsaa7XhQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4001/api/auth/getallmemberlist",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"api",
+										"auth",
+										"getallmemberlist"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete_member",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzAxNTZmNDE1YjQzYmE4OGZjY2RkNzQiLCJlbWFpbCI6ImtyaXNobmFAZ21haWwuY29tIiwicm9sZSI6IjEiLCJpYXQiOjE3MjgxNTIzNTEsImV4cCI6MTcyODIzODc1MX0.FjjMuHk1D_KiBZtiDhEP9cm034PJ4n49XJxQsaa7XhQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4001/api/auth/delete_member/670194e5580ea5a89f2cdc1d",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"api",
+										"auth",
+										"delete_member",
+										"670194e5580ea5a89f2cdc1d"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get_delete_member_list",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzAxNTZmNDE1YjQzYmE4OGZjY2RkNzQiLCJlbWFpbCI6ImtyaXNobmFAZ21haWwuY29tIiwicm9sZSI6IjEiLCJpYXQiOjE3MjgxNTIzNTEsImV4cCI6MTcyODIzODc1MX0.FjjMuHk1D_KiBZtiDhEP9cm034PJ4n49XJxQsaa7XhQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4001/api/auth/get_delete_member_list",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"api",
+										"auth",
+										"get_delete_member_list"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "uodate_member",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzAxNTZmNDE1YjQzYmE4OGZjY2RkNzQiLCJlbWFpbCI6ImtyaXNobmFAZ21haWwuY29tIiwicm9sZSI6IjEiLCJpYXQiOjE3MjgxNTIzNTEsImV4cCI6MTcyODIzODc1MX0.FjjMuHk1D_KiBZtiDhEP9cm034PJ4n49XJxQsaa7XhQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"memberId\":\"670194e5580ea5a89f2cdc1d\",\r\n    \"username\":\"hero\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4001/api/auth/update_member",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"api",
+										"auth",
+										"update_member"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"username\":\"librarian\",\r\n        \"email\":\"librarian@gmail.com\",\r\n        \"password\":\"librarian@12345\",\r\n        \"role\":1   ////////////////// 1 => librarian and 2 for member \r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://library-managment-3ki5.onrender.com/api/auth/register",
+							"protocol": "https",
+							"host": [
+								"library-managment-3ki5",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\":\"librarian\",\r\n        \"email\":\"librarian@gmail.com\",\r\n        \"password\":\"librarian@12345\"\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://library-managment-3ki5.onrender.com/api/auth/login",
+							"protocol": "https",
+							"host": [
+								"library-managment-3ki5",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Book_Module",
+			"item": [
+				{
+					"name": "add_book",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzAyNWQyY2IwMjI3M2NhYzRhNzRkNTUiLCJlbWFpbCI6ImxpYnJhcmlhbkBnbWFpbC5jb20iLCJyb2xlIjoiMSIsImlhdCI6MTcyODIwODIzNywiZXhwIjoxNzI4Mjk0NjM3fQ.7uQNBE-aqgsVGhpacECeUvCz75H4LZ7fFLyWEtM9fmE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"book_title\":\"Mr.devil\",\r\n        \"author\":\"Shashikant Yadav\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://library-managment-3ki5.onrender.com/api/librarian/book/add_book",
+							"protocol": "https",
+							"host": [
+								"library-managment-3ki5",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"librarian",
+								"book",
+								"add_book"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_book",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzAxNTZmNDE1YjQzYmE4OGZjY2RkNzQiLCJlbWFpbCI6ImtyaXNobmFAZ21haWwuY29tIiwicm9sZSI6IjEiLCJpYXQiOjE3MjgxNTIzNTEsImV4cCI6MTcyODIzODc1MX0.FjjMuHk1D_KiBZtiDhEP9cm034PJ4n49XJxQsaa7XhQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \"bookId\":\"6701897280fa368eec0c5407\",\r\n    \"book_title\":\"Might is rights\",\r\n        \"author\":\"Shashikant\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4001/api/librarian/book/update_book",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"librarian",
+								"book",
+								"update_book"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_book_list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzAyNWQyY2IwMjI3M2NhYzRhNzRkNTUiLCJlbWFpbCI6ImxpYnJhcmlhbkBnbWFpbC5jb20iLCJyb2xlIjoiMSIsImlhdCI6MTcyODIwODIzNywiZXhwIjoxNzI4Mjk0NjM3fQ.7uQNBE-aqgsVGhpacECeUvCz75H4LZ7fFLyWEtM9fmE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"book_title\":\"Might is right\",\r\n        \"author\":\"Shashikant Yadav\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://library-managment-3ki5.onrender.com/api/librarian/book/book_list",
+							"protocol": "https",
+							"host": [
+								"library-managment-3ki5",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"librarian",
+								"book",
+								"book_list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_book",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzAxNTZmNDE1YjQzYmE4OGZjY2RkNzQiLCJlbWFpbCI6ImtyaXNobmFAZ21haWwuY29tIiwicm9sZSI6IjEiLCJpYXQiOjE3MjgxNTIzNTEsImV4cCI6MTcyODIzODc1MX0.FjjMuHk1D_KiBZtiDhEP9cm034PJ4n49XJxQsaa7XhQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"book_title\":\"Might is right\",\r\n        \"author\":\"Shashikant Yadav\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4001/api/librarian/book/delete_book/6701897280fa368eec0c5407",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"librarian",
+								"book",
+								"delete_book",
+								"6701897280fa368eec0c5407"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_borrowed_book_history",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzAxNTZmNDE1YjQzYmE4OGZjY2RkNzQiLCJlbWFpbCI6ImtyaXNobmFAZ21haWwuY29tIiwicm9sZSI6IjEiLCJpYXQiOjE3MjgxOTg5NzIsImV4cCI6MTcyODI4NTM3Mn0.nRmjfle17OYFrjUHYfLYZJYa8gjuV2B_zp3Mjcm1Y2k",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"book_title\":\"Might is right\",\r\n        \"author\":\"Shashikant Yadav\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4001/api/librarian/book/get_all_borrowed_book",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"librarian",
+								"book",
+								"get_all_borrowed_book"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_return_book_history",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzAxNTZmNDE1YjQzYmE4OGZjY2RkNzQiLCJlbWFpbCI6ImtyaXNobmFAZ21haWwuY29tIiwicm9sZSI6IjEiLCJpYXQiOjE3MjgxOTg5NzIsImV4cCI6MTcyODI4NTM3Mn0.nRmjfle17OYFrjUHYfLYZJYa8gjuV2B_zp3Mjcm1Y2k",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"book_title\":\"Might is right\",\r\n        \"author\":\"Shashikant Yadav\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4001/api/librarian/book/get_all_retrun_book",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"librarian",
+								"book",
+								"get_all_retrun_book"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Member_Module",
+			"item": [
+				{
+					"name": "borrow_book",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzAyMjkxNDdjYmZmYWU0NDc3Y2U3MDUiLCJlbWFpbCI6Im1lbWJlcjJAZ21haWwuY29tIiwicm9sZSI6IjIiLCJpYXQiOjE3MjgxOTQ4NDMsImV4cCI6MTcyODI4MTI0M30.ygGhdGwPUKCSDXERKHtr3s6woiAD-l0Mz3U6pvSJu0I",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4001/api/member/borrrow_book/67018e49f0fbb155375c299b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"member",
+								"borrrow_book",
+								"67018e49f0fbb155375c299b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "return_book",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzAyMjkxNDdjYmZmYWU0NDc3Y2U3MDUiLCJlbWFpbCI6Im1lbWJlcjJAZ21haWwuY29tIiwicm9sZSI6IjIiLCJpYXQiOjE3MjgxOTQ4NDMsImV4cCI6MTcyODI4MTI0M30.ygGhdGwPUKCSDXERKHtr3s6woiAD-l0Mz3U6pvSJu0I",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4001/api/member/return_borrrow_book/67018e49f0fbb155375c299b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"member",
+								"return_borrrow_book",
+								"67018e49f0fbb155375c299b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_avaialabe_book_list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzAyMjkxNDdjYmZmYWU0NDc3Y2U3MDUiLCJlbWFpbCI6Im1lbWJlcjJAZ21haWwuY29tIiwicm9sZSI6IjIiLCJpYXQiOjE3MjgxOTQ4NDMsImV4cCI6MTcyODI4MTI0M30.ygGhdGwPUKCSDXERKHtr3s6woiAD-l0Mz3U6pvSJu0I",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4001/api/member/view_available_book",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"member",
+								"view_available_book"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_borrowed_bookList",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzAyMjkxNDdjYmZmYWU0NDc3Y2U3MDUiLCJlbWFpbCI6Im1lbWJlcjJAZ21haWwuY29tIiwicm9sZSI6IjIiLCJpYXQiOjE3MjgxOTQ4NDMsImV4cCI6MTcyODI4MTI0M30.ygGhdGwPUKCSDXERKHtr3s6woiAD-l0Mz3U6pvSJu0I",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4001/api/member/view_borrowed_book",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"member",
+								"view_borrowed_book"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
